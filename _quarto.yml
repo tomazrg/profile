@@ -1,0 +1,24 @@
+project:
+  type: website
+
+website:
+  title: "Ricardo Gomes Tomaz"
+  navbar:
+    right:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About
+      - href: services.qmd
+        text: Services
+      - href: blog.qmd
+        text: Blog
+      - href: contact.qmd
+        text: Contact
+
+format:
+  html:
+    theme: flatly
+    css: styles.css
+    toc: false
+    page-layout: full

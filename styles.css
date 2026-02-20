@@ -1,0 +1,72 @@
+
+/* Reset */
+html, body {
+  margin: 0;
+  padding: 0;
+  background: transparent !important;
+}
+
+/* Remove fundo e limites do Quarto */
+.page-layout-full .quarto-container,
+.page-layout-full .content {
+  max-width: 100%;
+  padding: 0 !important;
+  margin: 0 !important;
+  background: transparent !important;
+}
+
+.hero {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+
+  background-image: url("fig/background.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;      /* centro vertical */
+  justify-content: center;  /* centro horizontal */
+
+  z-index: 0;
+}
+
+/* Texto branco garantido */
+.hero-text,
+.hero-text h1,
+.hero-text h2,
+.hero-text h3,
+.hero-text p {
+  color: #ffffff !important;
+}
+
+/* Botão */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #8b0000;
+  color: #ffffff;
+  padding: 10px 22px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Navbar flutuante */
+.navbar {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  background: transparent !important;
+}
+
+/* REMOVE QUALQUER FUNDO DO QUARTO */
+body,
+.page,
+.page-content,
+.content,
+.quarto-container {
+  background: transparent !important;
+}
+
