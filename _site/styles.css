@@ -155,7 +155,7 @@ body,
   .hero-inner {
   width: min(1100px, 92vw);
   display: flex;
-  flex-direction: row-reverse;      /* 🔴 ISSO é o principal */
+  flex-direction: row-reverse;      /* 🔴 ISSO é o principalt */ 
   align-items: center;
   justify-content: space-between;
   gap: clamp(40px, 6vw, 90px);
