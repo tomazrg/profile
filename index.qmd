@@ -19,7 +19,7 @@ page-layout: full
 
 </div>
 
-![](fig/me2.png){.profile-pic}
+![](fig/me.jpg){.profile-pic}
 
 </div>
 
