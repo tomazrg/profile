@@ -1,19 +1,37 @@
+/* ===============================
+   RESET GERAL / QUARTO
+================================ */
 
-/* Reset */
 html, body {
   margin: 0;
   padding: 0;
   background: transparent !important;
 }
 
-/* Remove fundo e limites do Quarto */
+body,
+.page,
+.page-content,
+.content,
+.quarto-container,
 .page-layout-full .quarto-container,
 .page-layout-full .content {
+  background: transparent !important;
   max-width: 100%;
-  padding: 0 !important;
   margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Navbar flutuante */
+.navbar {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
   background: transparent !important;
 }
+
+/* ===============================
+   HERO (BACKGROUND)
+================================ */
 
 .hero {
   position: fixed;
@@ -27,22 +45,98 @@ html, body {
   background-repeat: no-repeat;
 
   display: flex;
-  align-items: center;      /* centro vertical */
-  justify-content: center;  /* centro horizontal */
+  align-items: center;
+  justify-content: center;
 
   z-index: 0;
 }
 
-/* Texto branco garantido */
+/* ===============================
+   CONTEÚDO DO HERO
+================================ */
+
+.hero-inner {
+  width: min(1100px, 92vw);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(32px, 5vw, 72px);
+  z-index: 1;
+}
+
+/* ===============================
+   TEXTO
+================================ */
+
 .hero-text,
 .hero-text h1,
 .hero-text h2,
 .hero-text h3,
 .hero-text p {
   color: #ffffff !important;
+  margin: 0;
 }
 
-/* Botão */
+.hero-text {
+  padding: 18px 22px;
+  border-radius: 16px;
+  background: rgba(0,0,0,0.25);
+  backdrop-filter: blur(3px);
+}
+
+.hero-text h3 {
+  font-weight: 400;
+  opacity: 0.95;
+  margin-bottom: 10px;
+}
+
+.hero-text h1 {
+  font-size: clamp(34px, 4.2vw, 56px);
+  line-height: 1.05;
+  margin-bottom: 10px;
+}
+
+.hero-text h2 {
+  font-weight: 400;
+  font-size: clamp(18px, 2vw, 26px);
+  opacity: 0.95;
+  margin-bottom: 16px;
+}
+
+/* ===============================
+   FOTO + MOLDURA (SEM CORTE)
+================================ */
+
+/* Moldura NÃO estica */
+.photo-frame {
+
+  width: fit-content;
+  align-self: center;
+
+  padding: 6px;
+  border-radius: 20px;
+
+  background: rgba(255,255,255,0.15);
+  border: 2px solid rgba(255,255,255,0.75);
+
+  box-shadow: 0 14px 36px rgba(0,0,0,0.45);
+}
+
+
+/* Imagem SEM corte */
+.profile-pic {
+  display: block;
+  width: clamp(300px, 32vw, 480px);
+  height: auto;
+
+  border-radius: 14px;
+  object-fit: contain;
+}
+
+/* ===============================
+   BOTÃO
+================================ */
+
 .btn {
   display: inline-block;
   margin-top: 20px;
@@ -53,20 +147,27 @@ html, body {
   border-radius: 5px;
 }
 
-/* Navbar flutuante */
-.navbar {
-  position: absolute;
-  width: 100%;
-  z-index: 10;
-  background: transparent !important;
+/* ===============================
+   MOBILE
+================================ */
+
+@media (max-width: 820px) {
+  .hero-inner {
+  width: min(1100px, 92vw);
+  display: flex;
+  flex-direction: row-reverse;      /* 🔴 ISSO é o principal */
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(40px, 6vw, 90px);
+  z-index: 1;
 }
 
-/* REMOVE QUALQUER FUNDO DO QUARTO */
-body,
-.page,
-.page-content,
-.content,
-.quarto-container {
-  background: transparent !important;
-}
 
+  .hero-text {
+    padding: 14px 16px;
+  }
+
+  .profile-pic {
+    width: clamp(260px, 70vw, 360px);
+  }
+}

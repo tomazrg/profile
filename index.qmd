@@ -5,20 +5,22 @@ page-layout: full
 
 <div class="hero">
 
+<div class="hero-inner">
+
 <div class="hero-text">
 
 ### Hello, My name is
 
-# Ricardo Gomes Tomaz  
+# Ricardo Tomaz
 
-## PhD Student in Plant Pathology  
+## PhD Student in Plant Pathology
 
 [Download CV](cv.pdf){.btn}
 
 </div>
 
-<div class="hero-image">
-<img src="fig/background.jpeg" alt="profile">
+![](fig/me2.png){.profile-pic}
+
 </div>
 
 </div>
