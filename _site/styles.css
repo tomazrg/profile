@@ -56,13 +56,16 @@ body,
 ================================ */
 
 .hero-inner {
-  width: min(1100px, 92vw);
+  width: 100%;
+  max-width: 1400px;          /* mais largo que antes */
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: clamp(32px, 5vw, 72px);
+  justify-content: flex-start; /* empurra conteúdo para a esquerda */
+  gap: clamp(60px, 8vw, 140px);
+  padding-left: 40px;         /* distância da borda esquerda */
   z-index: 1;
 }
+
 
 /* ===============================
    TEXTO
@@ -83,6 +86,13 @@ body,
   background: rgba(0,0,0,0.25);
   backdrop-filter: blur(3px);
 }
+
+
+.hero-text {
+  max-width: 600px;
+  margin-left: 20px;/* 🔴 AUMENTA A LARGURA DO QUADRO */
+}
+
 
 .hero-text h3 {
   font-weight: 400;
@@ -167,7 +177,34 @@ body,
     padding: 14px 16px;
   }
 
-  .profile-pic {
-    width: clamp(260px, 70vw, 360px);
-  }
+  /* CONTÊINER OVAL (força o formato) */
+.profile-pic {
+  width: 240px !important;
+  height: 360px !important;
+
+  border-radius: 10% / 80% !important; /* OVAL REAL */
+  overflow: hidden !important;
+
+  object-fit: cover !important;
+  display: block !important;
+
+  box-shadow: 0 16px 38px rgba(0,0,0,0.45) !important;
+}
+
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+}
+
+.social-links a {
+  color: #ffffff;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  opacity: 0.8;
 }

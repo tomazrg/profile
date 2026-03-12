@@ -7,6 +7,8 @@ page-layout: full
 
 <div class="hero-inner">
 
+![](fig/me34.jpg){.photo-oval}
+
 <div class="hero-text">
 
 ### Hello, My name is
@@ -15,11 +17,24 @@ page-layout: full
 
 ## PhD Student in Plant Pathology
 
-[Download CV](cv.pdf){.btn}
 
+<div class="btn social-links">
+  <a href="https://github.com/tomazrg" target="_blank">
+    <i class="bi bi-github"></i>
+  </a>
+
+  <a href="https://www.linkedin.com/in/ricardo-gomes-tom%C3%A1z-0137ba189/" target="_blank">
+    <i class="bi bi-linkedin"></i>
+  </a>
+
+  <a href="https://www.instagram.com/tomaz.ricardogomes/" target="_blank">
+    <i class="bi bi-instagram"></i>
+  </a>
 </div>
 
-![](fig/me.jpg){.profile-pic}
+
+
+</div>
 
 </div>
 
