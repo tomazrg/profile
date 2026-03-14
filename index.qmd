@@ -7,7 +7,7 @@ page-layout: full
 
 <div class="hero-inner">
 
-![](fig/me34.jpg){.photo-oval}
+![](fig/me33.png){.photo-oval}
 
 <div class="hero-text">
 
