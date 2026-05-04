@@ -188,3 +188,60 @@ body {
   font-size: 14px;
   white-space: nowrap; /* evita quebrar linha */
 }
+
+/* ================= ABOUT PAGE ================= */
+
+.about-section {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+/* Optional top image */
+.about-image {
+  margin-bottom: 60px;
+}
+
+
+.about-image img {
+  width: 100%;
+  max-width: 620px;   /* controla o tamanho */
+  height: auto;
+  border-radius: 12px;
+
+  display: block;      /* 🔑 essencial */
+  margin: 0 auto;      /* 🔑 centraliza */
+}
+
+/* Content blocks */
+.about-block {
+  margin-bottom: 80px;   /* 🔑 MUITO respiro entre seções */
+}
+
+/* Section titles */
+.about-block h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+
+/* Paragraphs */
+.about-block p {
+  font-size: 16px;
+  color: #cfcfcf;
+  line-height: 1.7;
+  text-align: justify;
+  margin-bottom: 18px;
+}
+
+/* Lists */
+.about-block ul {
+  padding-left: 18px;
+}
+
+.about-block li {
+  font-size: 16px;
+  color: #cfcfcf;
+  margin-bottom: 12px;
+}
