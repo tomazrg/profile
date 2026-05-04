@@ -13,5 +13,11 @@
   },
   "services.qmd": {
     "services.html": "f76c9852"
+  },
+  "contacts.qmd": {
+    "contacts.html": "c42aaef4"
+  },
+  "work.qmd": {
+    "work.html": "130ea7d6"
   }
 }
