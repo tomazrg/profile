@@ -1,0 +1,190 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================= BODY ================= */
+body {
+  font-family: "JetBrains Mono", monospace;
+  min-height: 100vh;
+
+  background-image:
+    linear-gradient(
+      rgba(31, 35, 43, 0.85),
+      rgba(31, 35, 43, 0.85)
+    ),
+    url("assets/background.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  color: #eaeaea;
+}
+
+/* ================= NAVBAR ================= */
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 60px;
+  font-size: 14px;
+}
+
+/* Logo (John 14:6) */
+.logo {
+  color: #21f3a6;
+  text-decoration: none;
+}
+
+.logo:hover {
+  opacity: 0.85;
+}
+
+/* Nav left */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* NAV LINKS */
+.nav-center a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0 15px;
+  font-size: 15px;
+  text-decoration: none;
+  color: #eaeaea;
+}
+
+.nav-center a.active,
+.nav-center a:hover {
+  color: #21f3a6;
+}
+
+/* Nav icon characters */
+.nav-icon {
+  font-size: 1.25em;
+  line-height: 1;
+  opacity: 0.85;
+}
+
+/* Right button */
+.brief-btn {
+  background: #ffffff;
+  color: #1f232b;
+  padding: 8px 14px;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+/* ================= HERO ================= */
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 120px;
+  padding: 40px 80px;
+  max-width: 1400px;
+  margin: 0 auto;
+  height: calc(100vh - 100px);
+}
+
+/* ================= TEXT ================= */
+.hero-text {
+  max-width: 520px;
+}
+
+.hero-text h1 {
+  font-size: 64px;
+  line-height: 1.1;
+  margin-bottom: 30px;
+}
+
+.hero-text p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #cfcfcf;
+}
+
+/* ================= CTA ================= */
+.cta {
+  display: inline-block;
+  background-color: #21f3a6;
+  color: #1f232b;
+  padding: 14px 28px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* ================= HERO IMAGE ================= */
+.hero-image img {
+  width: 420px;
+  height: 420px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 50%;
+}
+
+/* ================= SOCIAL ICONS ================= */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  margin-top: 30px;
+  transform: translateX(-20px);
+}
+
+.social-icons img {
+  width: 36px;
+  height: auto;
+  opacity: 0.9;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.social-icons img:hover {
+  opacity: 1;
+  transform: scale(1.08);
+}
+
+/* ================= CONTACT PAGE ================= */
+.contact-container {
+  width: 100%;
+  margin: 0;
+  padding: 0px 0;   /* só espaço vertical */
+}
+
+/* Map */
+#map {
+  width: 100%;
+  height: 380px;
+  border-radius: 12px;
+  margin-top: 30px;
+  filter: grayscale(0.9);
+}
+
+/* Image below map — NATURAL */
+.location-image {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.location-image img {
+  width: 100%;
+  height: auto;        /* 🔑 NÃO força altura */
+  border-radius: 12px;
+  display: block;
+}
+
+/* John 14:6) */
+.nav-phrase {
+  color: #21f3a6;
+  font-size: 14px;
+  white-space: nowrap; /* evita quebrar linha */
+}
