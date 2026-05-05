@@ -23,7 +23,7 @@ title: ""
     </a>
 
     <a href="work.html">
-      <span class="nav-icon">▣</span>Work
+      <span class="nav-icon">▣</span>Papers
     </a>
 
     <a href="contacts.html">
